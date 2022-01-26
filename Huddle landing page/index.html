@@ -2,9 +2,150 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Huddle landing page with alternating feature blocks
+    </title>
+
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+
+  <body>
+    <div id="container">
+      <section id="home-section">
+        <div id="overlay"></div>
+        <nav id="navbar">
+          <div id="logo">
+            <img src="./images/logo.svg" alt="Logo" />
+          </div>
+          <div id="try">
+            <button class="try-btn">Try It Free</button>
+          </div>
+        </nav>
+        <div id="home-section-content">
+          <div class="left-panel">
+            <h2>Build The Community Your Fans Will Love</h2>
+            <p>
+              Huddle re-imagines the way we build communities. You have a voice,
+              but so does your audience. Create connections with your users as
+              you engage in genuine discussion.
+            </p>
+            <button id="hero-btn">Get Started For Free</button>
+          </div>
+          <div class="right-panel">
+            <img src="./images/illustration-mockups.svg" alt="" />
+          </div>
+        </div>
+      </section>
+      <section id="details-section">
+        <div id="cards">
+          <div class="card">
+            <div class="card-text">
+              <h3 class="card-heading">Grow Together</h3>
+              <p>
+                Generate meaningful discussions with your audience and build a
+                strong, loyal community. Think of the insightful conversations
+                you miss out on with a feedback form.
+              </p>
+            </div>
+            <div class="card-img">
+              <img src="./images/illustration-grow-together.svg" alt="" />
+            </div>
+          </div>
+          <div class="card middle-card">
+            <div class="card-img">
+              <img
+                src="./images/illustration-flowing-conversation.svg"
+                alt=""
+              />
+            </div>
+            <div class="card-text">
+              <h3 class="card-heading">Flowing Conversations</h3>
+              <p>
+                You wouldn't paginate a conversation in real life, so why do it
+                online? Our threads have just-in-time loading for a more natural
+                flow.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-text">
+              <h3 class="card-heading">Your Users</h3>
+              <p>
+                It takes no time at all to integrate Huddle with your app's
+                authentication solution. This means, once signed in to your app,
+                your users can start chatting immediately.
+              </p>
+            </div>
+            <div class="card-img">
+              <img src="./images/illustration-your-users.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="message">
+        <h3>Ready To Build Your Community?</h3>
+        <button>Get Started For Free</button>
+      </div>
+      <footer>
+        <div id="footer-container">
+          <div id="f-left">
+            <img id="footer-logo" src="./images/footerlogo.svg" alt="logo" />
+            <div>
+              <img src="./images/icon-location.svg" alt="location" />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deleniti non eveniet tenetur atque inventore voluptatem ut
+                consequatur laborum!
+              </p>
+            </div>
+            <div>
+              <img src="./images/icon-phone.svg" alt="phone" />
+              <p>+1-543-123-4567</p>
+            </div>
+            <div>
+              <img src="./images/icon-email.svg" alt="email" />
+              <p>example@huddle.com</p>
+            </div>
+          </div>
+          <div id="f-middle">
+            <div id="about">
+              <a href="#">About us</a><a href="#">What we do</a
+              ><a href="#">FAQ</a>
+            </div>
+            <div id="career">
+              <a href="#">Career</a><a href="#">Blog</a
+              ><a href="#">Contact Us</a>
+            </div>
+          </div>
+          <div id="f-right">
+            <a href="#"> <img src="./images/facebook.svg" alt="" /> </a
+            ><a href="#"> <img src="./images/twitter.svg" alt="" /> </a
+            ><a href="#">
+              <img src="./images/instagram.svg" alt="" />
+            </a>
+          </div>
+        </div>
+
+        <p class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by
+          <a id="brand" target="_blank" href="https://devmdmamun.com"
+            >DevMdMamun</a
+          >.
+        </p>
+      </footer>
+    </div>
+  </body>
 </html>

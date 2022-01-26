@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+#container {
+  width: 100%;
+}
+#home-section {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-width: 100%;
+  background-image: url(./images/bg-hero-desktop.svg);
+  background-color: hsl(193, 100%, 96%);
+}
+nav {
+  width: 90%;
+  height: 70px;
+  padding: 50px 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.try-btn,
+#hero-btn,
+.card,
+#message,
+#messege button {
+  box-shadow: 1px 1px 10px 0px rgba(74, 74, 74, 0.26);
+  -webkit-box-shadow: 1px 1px 10px 0px rgba(74, 74, 74, 0.26);
+  -moz-box-shadow: 1px 1px 10px 0px rgba(74, 74, 74, 0.26);
+}
+
+.try-btn {
+  width: 200px;
+  height: 50px;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+  background: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+#home-section-content {
+  height: auto;
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+
+.left-panel {
+  width: 40%;
+  margin: auto 0;
+}
+
+.left-panel h2 {
+  font-size: 45px;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+}
+
+.left-panel p {
+  font-size: 20px;
+  line-height: 27px;
+  margin: 20px 0;
+}
+
+#hero-btn {
+  font-size: 16px;
+  font-weight: bold;
+  width: 250px;
+  height: 60px;
+  color: white;
+  background: hsl(322, 100%, 66%);
+  margin-top: 20px;
+  border: none;
+  border-radius: 30px;
+}
+
+.right-panel {
+  width: 50%;
+  margin: auto 0;
+}
+.right-panel img {
+  max-width: 100%;
+  height: auto;
+}
+#cards {
+  padding: 100px 0 0 0;
+  width: 90%;
+  margin: 0 auto;
+}
+.card {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 35px 0;
+  border-radius: 20px;
+}
+.card-text {
+  width: 40%;
+  margin: auto 0;
+}
+.card-text h3 {
+  font-size: 30px;
+}
+.card-text p {
+  margin-top: 20px;
+  font-size: 18px;
+}
+.card-img {
+  width: 30%;
+  padding: 50px 0;
+}
+.card-img img {
+  width: 100%;
+  height: auto;
+}
+#message {
+  width: 60%;
+  height: 300px;
+  background-color: white;
+  margin: 0px auto;
+  border-radius: 10px;
+  position: relative;
+  bottom: -100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#message h3 {
+  font-size: 40px;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#message button {
+  font-size: 25px;
+  padding: 20px 60px;
+  margin-top: 30px;
+  background-color: hsl(322, 100%, 66%);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+footer {
+  background: hsl(192, 100%, 9%);
+}
+#footer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 150px;
+}
+#f-left {
+  width: 40%;
+  padding: 20px;
+  color: white;
+}
+
+#footer-logo {
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+#f-left div {
+  display: flex;
+  margin: 15px 0;
+}
+
+#f-left div img {
+  width: 20px;
+  height: 20px;
+  margin-right: 30px;
+}
+
+#f-middle {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#f-middle a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  margin: 20px 0;
+}
+#f-right {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#f-right a {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  padding: 10px 12px;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#f-right img {
+  width: 20px;
+  fill: white;
+}
+
+.attribution {
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+.attribution a {
+  color: #ff52bf;
+}
+#brand {
+  color: #00ffff83;
+}
+
+@media screen and (max-width: 768px) {
+  #home-section {
+    background-image: url(./images/bg-hero-mobile.svg);
+    height: auto;
+  }
+
+  #home-section-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  nav {
+    align-items: center;
+  }
+
+  #logo img {
+    width: 180px;
+  }
+
+  .try-btn {
+    width: 150px;
+    height: 45px;
+    padding: 3px;
+  }
+
+  .left-panel {
+    text-align: center;
+  }
+  .left-panel,
+  .right-panel {
+    width: 90%;
+    margin: 50px;
+    display: block;
+  }
+
+  #cards {
+    padding: 0;
+  }
+
+  .card {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    margin: 100px 0;
+  }
+  .middle-card {
+    flex-direction: column;
+  }
+  .card-img {
+    width: 60%;
+  }
+  .card-text {
+    width: 60%;
+    text-align: center;
+  }
+
+  #message {
+    width: 80%;
+    height: 250px;
+  }
+  #message h3 {
+    font-size: 30px;
+  }
+  #message button {
+    font-size: 20px;
+    padding: 10px 30px;
+  }
+
+  #footer-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #f-left,
+  #f-middle,
+  #f-right {
+    width: 90%;
+  }
+  #f-right {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .left-panel h2 {
+    font-size: 35px;
+  }
+  .left-panel p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .card-text {
+    width: 80%;
+  }
+  .card-img {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .card {
+    margin: 50px 0;
+  }
+}
