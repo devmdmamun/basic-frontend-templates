@@ -15,7 +15,7 @@
   height: 100vh;
   max-width: 100%;
   background-image: url(./images/bg-hero-desktop.svg);
-  background-color: hsl(193, 100%, 96%);
+  background-color: #ebfbff;
 }
 nav {
   width: 90%;
@@ -30,20 +30,30 @@ nav {
 #hero-btn,
 .card,
 #message,
-#messege button {
+#message button {
   box-shadow: 1px 1px 10px 0px rgba(74, 74, 74, 0.26);
   -webkit-box-shadow: 1px 1px 10px 0px rgba(74, 74, 74, 0.26);
   -moz-box-shadow: 1px 1px 10px 0px rgba(74, 74, 74, 0.26);
+}
+.try-btn:hover,
+#hero-btn:hover {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  border: 1px solid black;
 }
 
 .try-btn {
   width: 200px;
   height: 50px;
-  color: black;
   font-size: 16px;
   font-weight: bold;
   padding: 10px;
   background: white;
+}
+
+.try-btn,
+#hero-btn {
   border: none;
   border-radius: 30px;
   cursor: pointer;
@@ -83,8 +93,6 @@ nav {
   color: white;
   background: hsl(322, 100%, 66%);
   margin-top: 20px;
-  border: none;
-  border-radius: 30px;
 }
 
 .right-panel {
@@ -151,7 +159,7 @@ nav {
   font-size: 25px;
   padding: 20px 60px;
   margin-top: 30px;
-  background-color: hsl(322, 100%, 66%);
+  background-color: #ff52bf;
   color: white;
   border: none;
   border-radius: 50px;
@@ -202,6 +210,9 @@ footer {
   color: white;
   margin: 20px 0;
 }
+#f-middle a:hover {
+  text-decoration: underline;
+}
 #f-right {
   width: 30%;
   display: flex;
@@ -221,9 +232,12 @@ footer {
   align-items: center;
 }
 
+#f-right a:hover {
+  border: 2px solid #ff52bf;
+}
+
 #f-right img {
   width: 20px;
-  fill: white;
 }
 
 .attribution {
@@ -245,13 +259,12 @@ footer {
   }
 
   #home-section-content {
-    display: flex;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
   }
 
-  nav {
+  nav,
+  #home-section-content {
     align-items: center;
   }
 
