@@ -52,7 +52,7 @@ nav {
 #home-section-content {
   height: auto;
   width: 95%;
-  margin: 0 auto;
+  margin: 30px auto;
   display: flex;
   justify-content: space-around;
   flex-grow: 1;
@@ -260,9 +260,10 @@ footer {
   }
 
   .try-btn {
-    width: 150px;
+    width: 140px;
     height: 45px;
     padding: 3px;
+    font-size: 13px;
   }
 
   .left-panel {
@@ -344,5 +345,14 @@ footer {
 @media screen and (max-width: 450px) {
   .card {
     margin: 50px 0;
+  }
+}
+@media screen and (max-width: 375px) {
+  nav {
+    justify-content: center;
+    align-items: center;
+  }
+  .try-btn {
+    display: none;
   }
 }
