@@ -22,14 +22,22 @@ header {
   background-position: 25% 53%;
   border-radius: 0 0 0 100px;
 }
-nav {
+
+nav,
+.first-main-details,
+.second-details-main,
+.third-main-details,
+#footer-flex {
   max-width: 1200px;
   width: 100%;
+  margin: 0 auto;
   display: flex;
   align-items: center;
+}
+
+nav {
   justify-content: space-between;
   padding-top: 70px;
-  margin: 0 auto;
 }
 #logo {
   margin-right: 50px;
@@ -164,13 +172,6 @@ nav li {
   font-weight: bold;
   margin-top: 50px;
 }
-.first-main-details {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-}
 .first-main-details-left {
   min-width: 50%;
   padding: 30px 0;
@@ -199,13 +200,9 @@ nav li {
 }
 
 .second-details-main {
-  max-width: 1200px;
-  width: 100%;
   height: 100%;
   margin: auto;
   color: white;
-  display: flex;
-  align-items: center;
 }
 .second-details-main img {
   margin-top: 60px;
@@ -225,13 +222,6 @@ nav li {
   margin: 70px 0;
 }
 
-.third-main-details {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-}
 .third-main-details-right h3 {
   font-size: 30px;
   margin-top: 70px;
@@ -248,11 +238,7 @@ footer {
   border-radius: 0 120px 0 0;
 }
 #footer-flex {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
   padding: 100px;
-  display: flex;
   justify-content: space-between;
   color: hsl(240, 2%, 79%);
 }
@@ -315,7 +301,9 @@ h4 {
   .first-main-details img {
     margin: 30px 0;
   }
-  .first-main-details-left {
+  .first-main-details-left,
+  .second-detais-right,
+  .third-main-details-right {
     padding: 0;
     width: 80%;
     margin: 0 auto;
@@ -335,19 +323,14 @@ h4 {
     width: 50%;
     margin-top: -150px;
   }
-  .second-detais-right {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 0;
+  .second-detais-right p {
+    margin-bottom: 50px;
   }
   .third-main-details {
     flex-direction: column;
   }
   .third-main-details-right {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
+    padding: inherit;
   }
   p {
     text-align: justify;
