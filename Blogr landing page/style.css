@@ -372,6 +372,9 @@ h4 {
     border-radius: 5px;
     display: none;
   }
+  .show {
+    display: flex;
+  }
   .right-nav ul,
   .right-nav #log-action {
     display: flex;

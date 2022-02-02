@@ -212,19 +212,17 @@
         for (let i = 0; i < arrowIcons.length; i++) {
           arrowIcons[i].src = "./images/icon-arrow-dark.svg";
         }
-        hMenu.addEventListener("click", () => {
-          hMenu.classList.toggle("show-nav");
-          if (hMenu.classList.contains("show-nav")) {
-            hMenu.src = "./images/icon-close.svg";
-            smallNav.style.display = "flex";
-          } else {
-            hMenu.src = "./images/icon-hamburger.svg";
-            smallNav.style.display = "none";
-          }
-        });
-      } else {
-        smallNav.style.display = "flex";
       }
+      hMenu.addEventListener("click", () => {
+        hMenu.classList.toggle("show-nav");
+        if (hMenu.classList.contains("show-nav")) {
+          hMenu.src = "./images/icon-close.svg";
+          smallNav.className += " show";
+        } else {
+          hMenu.src = "./images/icon-hamburger.svg";
+          smallNav.className = "right-nav";
+        }
+      });
     </script>
   </body>
 </html>
