@@ -107,7 +107,9 @@ nav li {
   -webkit-backdrop-filter: blur(6.5px);
   color: white;
 }
-
+#h-menu {
+  display: none;
+}
 #home-content {
   flex-grow: 1;
   display: flex;
@@ -211,7 +213,7 @@ nav li {
 .second-detais-right {
   padding: 30px;
 }
-.second-detais-right h2 {
+.second-detais-right h3 {
   font-size: 40px;
   margin: 30px 0;
 }
@@ -342,8 +344,59 @@ h4 {
   }
 }
 @media screen and (max-width: 880px) {
+  nav {
+    position: relative;
+  }
   .right-nav {
+    position: absolute;
+    width: 280px;
+    top: 130px;
+    right: 0;
+    overflow: hidden;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px 10px;
+    border-radius: 5px;
     display: none;
+  }
+  .right-nav ul,
+  .right-nav #log-action {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .right-nav ul {
+    border-bottom: 1px solid gray;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  .right-nav li,
+  .right-nav ul {
+    width: 100%;
+  }
+  .right-nav li,
+  #log-action a {
+    margin: 10px 0;
+    color: #3f4164;
+  }
+  #h-menu {
+    display: block;
+  }
+  #log-action #signup-btn {
+    background: linear-gradient(to right, #ff8f70, #ff3d54);
+    color: white;
+  }
+  .dropdown-content {
+    position: static;
+    width: 100%;
+    margin: 20px 0;
+    box-shadow: none;
+  }
+  .dropdown-content a {
+    text-align: center;
+  }
+  .dropdown:hover span {
+    text-decoration: none;
   }
 }
 @media screen and (max-width: 768px) {
@@ -367,5 +420,10 @@ h4 {
   }
   h4 {
     margin: 30px 0;
+  }
+}
+@media screen and (max-width: 375px) {
+  .second-detais-right {
+    width: 90%;
   }
 }

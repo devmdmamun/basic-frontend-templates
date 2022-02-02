@@ -24,7 +24,11 @@
               <ul>
                 <li class="dropdown">
                   <span>Product</span>
-                  <img src="./images/icon-arrow-light.svg" alt="down-arrow" />
+                  <img
+                    class="arrow-icon"
+                    src="./images/icon-arrow-light.svg"
+                    alt="down-arrow"
+                  />
                   <div class="dropdown-content">
                     <a href="#">Overview</a>
                     <a href="#">Pricing</a>
@@ -36,7 +40,11 @@
 
                 <li class="dropdown">
                   <span>Company</span>
-                  <img src="./images/icon-arrow-light.svg" alt="down-arrow" />
+                  <img
+                    class="arrow-icon"
+                    src="./images/icon-arrow-light.svg"
+                    alt="down-arrow"
+                  />
                   <div class="dropdown-content">
                     <a href="#">About</a>
                     <a href="#">Team</a>
@@ -47,7 +55,11 @@
 
                 <li class="dropdown">
                   <span>Connect</span>
-                  <img src="./images/icon-arrow-light.svg" alt="down-arrow" />
+                  <img
+                    class="arrow-icon"
+                    src="./images/icon-arrow-light.svg"
+                    alt="down-arrow"
+                  />
                   <div class="dropdown-content">
                     <a href="#">Contact</a>
                     <a href="#">Newsletter</a>
@@ -55,11 +67,16 @@
                   </div>
                 </li>
               </ul>
-              <div>
+              <div id="log-action">
                 <a href="#">Login</a>
                 <a id="signup-btn" href="#">Signup</a>
               </div>
             </div>
+            <img
+              id="h-menu"
+              src="./images/icon-hamburger.svg"
+              alt="hamburger menu"
+            />
           </nav>
           <div id="home-content">
             <h2>A modern publishing platform</h2>
@@ -108,7 +125,7 @@
               alt="phones"
             />
             <div class="second-detais-right">
-              <h2>State of the Art Infrastructure</h2>
+              <h3>State of the Art Infrastructure</h3>
               <p>
                 With reliability and speed in mind, worldwide data centers
                 provide the backbone for ultra-fast connectivity. This ensures
@@ -178,5 +195,27 @@
         </div>
       </footer>
     </div>
+    <script>
+      let arrowIcons = document.getElementsByClassName("arrow-icon");
+      let hMenu = document.getElementById("h-menu");
+      var smallNav = document.getElementsByClassName("right-nav")[0];
+      if (window.innerWidth < 880) {
+        for (let i = 0; i < arrowIcons.length; i++) {
+          arrowIcons[i].src = "./images/icon-arrow-dark.svg";
+        }
+        hMenu.addEventListener("click", () => {
+          hMenu.classList.toggle("show-nav");
+          if (hMenu.classList.contains("show-nav")) {
+            hMenu.src = "./images/icon-close.svg";
+            smallNav.style.display = "flex";
+          } else {
+            hMenu.src = "./images/icon-hamburger.svg";
+            smallNav.style.display = "none";
+          }
+        });
+      } else {
+        smallNav.style.display = "flex";
+      }
+    </script>
   </body>
 </html>
