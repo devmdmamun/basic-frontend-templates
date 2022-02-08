@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+:root {
+  --bgmain-color: #748284;
+  --bgsecondary-color: #1c2122;
+}
+h2 {
+  font-weight: 700;
+  font-size: 2.25rem;
+}
+h3 {
+  font-size: 1.875rem;
+}
+a {
+  cursor: pointer;
+}
+p {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.6;
+}
+ul {
+  padding-left: 20px;
+  line-height: 1.6;
+}
+.container {
+  width: 100%;
+  overflow: hidden;
+}
+#home {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(./images/home-car.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+  display: block;
+  background-size: cover;
+}
+.a-width {
+  max-width: 1140px;
+  margin: auto;
+}
+.home-content {
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.home-content h1 {
+  font-size: 8rem;
+  margin: 110px auto 0;
+}
+.home-content h4 {
+  font-size: 1.25rem;
+}
+.bg-gradient {
+  background: linear-gradient(var(--bgsecondary-color), var(--bgmain-color));
+}
+.car-details-content {
+  min-height: 403px;
+  display: flex;
+  padding: 50px 0;
+  color: white;
+}
+.left-details {
+  height: inherit;
+  width: 67%;
+}
+.left-details img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+.right-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: right;
+  padding: 20px;
+  width: 33%;
+  height: inherit;
+}
+.right-details h2 {
+  margin: 0 0 0 20px;
+}
+.right-details p {
+  font-size: 1rem;
+  margin: 40px 0 0 40px;
+}
+.info {
+  background-color: var(--bgmain-color);
+}
+.info-details {
+  padding: 50px 0;
+  text-align: center;
+  color: white;
+}
+.info h2 {
+  margin: 20px 0;
+}
+.top-info p {
+  width: 550px;
+  margin: 20px auto 0;
+}
+.bottom-info {
+  display: flex;
+  margin: 50px auto;
+}
+.info-card {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 50px;
+}
+.info-card img {
+  width: 150px;
+  padding: 20px;
+}
+.service {
+  background-color: var(--bgsecondary-color);
+}
+.service-top {
+  min-height: 550px;
+  display: flex;
+  background-color: var(--bgsecondary-color);
+  color: white;
+  margin: 0 0 0 auto;
+  width: calc(((100% - 1140px) / 2) + 1140px);
+}
+.service-top-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+}
+.service-top-left h2 {
+  line-height: 1;
+}
+.service-top-left p {
+  margin: 20px 0;
+}
+.service-top-left a {
+  border: 2px solid white;
+  color: white;
+  text-decoration: none;
+  padding: 15px 30px;
+  font-weight: 300px;
+  letter-spacing: 2px;
+}
+.service-top-right {
+  max-width: 50%;
+  width: 100%;
+  min-height: 550px;
+  background-image: url(./images/car3.jpeg);
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.service-bottom {
+  background-color: var(--bgmain-color);
+}
+.service-bottom img {
+  height: 600px;
+  width: 100%;
+  object-fit: cover;
+}
+.service-bottom-flex {
+  width: 1035px;
+  margin: -108px auto 0 calc(((100% - 1140px) / 2) + 53px);
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: row;
+}
+.service-bottom-flex p {
+  margin: 20px 0 0;
+}
+.service-bottom-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  max-height: 286px;
+  flex: 1;
+}
+.service-bottom-card img {
+  width: 100% !important;
+  height: 490px;
+  box-shadow: 5px 5px 36px 0 rgb(0 0 0 / 55%);
+  margin: -203px auto 0;
+}
+.item-1 {
+  background-color: var(--bgsecondary-color);
+  color: white;
+  padding: 30px;
+}
+.item-2 {
+  background-color: white;
+  color: black;
+  padding: 30px;
+}
+.item-3 {
+  flex: 1.2;
+}
+.servicing-flex {
+  display: flex;
+  width: 100%;
+  background-color: var(--bgsecondary-color);
+  color: white;
+}
+.servicing-left {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px 80px;
+}
+.img-span {
+  height: 130px;
+  width: 130px;
+  margin: 0 auto;
+  padding: 10px;
+}
+.servicing-left img {
+  width: 100%;
+}
+.servicing-left p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+.servicing-left a {
+  border: 2px solid white;
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  padding: 15px 30px;
+  font-weight: 300px;
+  letter-spacing: 2px;
+}
+.servicing-right {
+  width: 60%;
+  min-height: 590px;
+  background: url(./images/mechanic3.jpeg);
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.car-info-flex {
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 60px 0;
+}
+.car-info-card {
+  margin: 30px 35px;
+  max-width: 320px;
+  width: 100%;
+}
+.car-info-card img {
+  width: 100%;
+  height: 170px;
+  margin: 14px auto 0 0;
+  object-fit: cover;
+}
+.car-info-card h4 {
+  font-size: 1.125rem;
+  margin: 20px 0;
+}
+.last-info {
+  background: var(--bgsecondary-color);
+  width: 100%;
+}
+.last-info-flex {
+  display: flex;
+  width: 100%;
+  color: white;
+  width: calc(((100% - 1140px) / 2) + 1140px);
+  margin: 0 auto 0 0;
+}
+.last-info-img {
+  min-height: 403px;
+  flex: 2;
+  padding: 30px;
+  background-image: url(./images/last-car.jpeg);
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.last-info-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: end;
+  padding: 20px;
+  flex: 1;
+}
+.last-info-text h2 {
+  margin-left: 20px;
+}
+footer {
+  background-color: #333333;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+}
+footer img {
+  background-color: white;
+  margin: 0 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.attribution {
+  text-align: center;
+  padding: 20px;
+}
+.attribution a {
+  color: #27d9f8;
+}
