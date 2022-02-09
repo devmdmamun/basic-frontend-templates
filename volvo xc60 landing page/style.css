@@ -48,10 +48,12 @@ ul {
   max-width: 1140px;
   margin: auto;
 }
+.d-flex {
+  display: flex;
+}
 .home-content {
   text-align: center;
   color: white;
-  display: flex;
   flex-direction: column;
 }
 .home-content h1 {
@@ -66,7 +68,6 @@ ul {
 }
 .car-details-content {
   min-height: 403px;
-  display: flex;
   padding: 50px 0;
   color: white;
 }
@@ -80,7 +81,6 @@ ul {
   height: auto;
 }
 .right-details {
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
@@ -112,7 +112,6 @@ ul {
   margin: 20px auto 0;
 }
 .bottom-info {
-  display: flex;
   margin: 50px auto;
 }
 .info-card {
@@ -129,7 +128,6 @@ ul {
 }
 .service-top {
   min-height: 550px;
-  display: flex;
   background-color: var(--bgsecondary-color);
   color: white;
   margin: 0 0 0 auto;
@@ -137,7 +135,6 @@ ul {
 }
 .service-top-left {
   width: 50%;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -178,14 +175,12 @@ ul {
   width: 1035px;
   margin: -108px auto 0 calc(((100% - 1140px) / 2) + 53px);
   padding-bottom: 60px;
-  display: flex;
   flex-direction: row;
 }
 .service-bottom-flex p {
   margin: 20px 0 0;
 }
 .service-bottom-card {
-  display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -213,14 +208,12 @@ ul {
   flex: 1.2;
 }
 .servicing-flex {
-  display: flex;
   width: 100%;
   background-color: var(--bgsecondary-color);
   color: white;
 }
 .servicing-left {
   width: 40%;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -257,7 +250,6 @@ ul {
   background-size: cover;
 }
 .car-info-flex {
-  display: flex;
   justify-content: center;
   color: white;
   padding: 60px 0;
@@ -282,7 +274,6 @@ ul {
   width: 100%;
 }
 .last-info-flex {
-  display: flex;
   width: 100%;
   color: white;
   width: calc(((100% - 1140px) / 2) + 1140px);
@@ -298,7 +289,6 @@ ul {
   background-repeat: no-repeat;
 }
 .last-info-text {
-  display: flex;
   justify-content: center;
   align-items: center;
   text-align: end;
@@ -311,11 +301,15 @@ ul {
 footer {
   background-color: #333333;
   color: white;
-  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 30px;
+}
+.footer-flex {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 footer img {
   background-color: white;
@@ -327,4 +321,91 @@ footer img {
 .attribution {
   text-align: center;
   padding: 20px 0 0;
+}
+@media screen and (max-width: 1140px) {
+  .servicing-flex,
+  .service-top,
+  .last-info-flex,
+  .car-details-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .car-details-content {
+    padding-bottom: 0;
+  }
+  .right-details {
+    max-width: 550px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+  .right-details h2 {
+    margin: 0;
+    text-align: center;
+  }
+  .right-details p {
+    margin: 40px 0;
+  }
+  .service-top,
+  .last-info-flex {
+    padding: 50px 0;
+    width: min(800px, 90%);
+    margin: auto;
+  }
+  .service-top-left {
+    width: 100%;
+    padding: 50px 0;
+  }
+  .service-top-right {
+    max-width: 100%;
+  }
+  .service-bottom-flex {
+    flex-direction: column-reverse;
+    max-width: 500px;
+    width: min(600px, 90%);
+    margin: -108px auto 0 auto;
+  }
+  .servicing-left {
+    width: min(600px, 90%);
+    padding: 30px 0;
+  }
+  .servicing-right {
+    width: min(600px, 100%);
+    min-height: 330px;
+  }
+  .last-info-img {
+    width: 100%;
+    min-height: calc(90vw / 2);
+  }
+  .last-info-text {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 900px) {
+  .car-info-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .car-info-card {
+    max-width: min(500px, 90%);
+  }
+  .car-info-card img {
+    max-height: 200px;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .info-details {
+    width: min(600px, 90%);
+  }
+  .top-info p {
+    width: 100%;
+  }
+  .bottom-info {
+    flex-direction: column;
+    align-items: center;
+  }
+  .info-card {
+    margin: 20px 0;
+  }
 }
